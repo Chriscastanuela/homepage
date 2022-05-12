@@ -8,14 +8,41 @@ body, html {
   min-height: 10vh;
   min-width: 100vw;
   background-color: #333333;
-  border-bottom: #808080 0.1px solid;
+  border-bottom: #f5f5f5 0.1px solid;
   position: fixed;
 }
 
 .home {
-  min-height: 110vh;
-  min-width: 90vw;
+  min-height: 80vh;
+  min-width: 100vw;
   background-image: linear-gradient(to right, #808080, #333333);
+}
+
+.hero {
+  min-height: 60vh;
+  min-width: 100vw;
+  background-image: linear-gradient(to right, #808080, #333333);
+}
+
+.projects_cta {
+  min-height: 20vh;
+  min-width: 100vw;
+  background-color: #F2F2F2;
+  border-top: #333333 2px solid;
+  border-bottom: #333333 2px solid;
+}
+
+.experience {
+  min-height: 80vh;
+  min-width: 100vw;
+  background-image: linear-gradient(to right, #808080, #333333);
+}
+
+.footer {
+  min-height: 60vh;
+  min-width: 100vw;
+  background-color: #333333;
+  border-top: #f5f5f5 0.1px solid;
 }
 
 /*# sourceMappingURL=style.css.map */
