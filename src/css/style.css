@@ -1,3 +1,21 @@
+body, html {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
 
+.header {
+  min-height: 10vh;
+  min-width: 100vw;
+  background-color: #333333;
+  border-bottom: #808080 0.1px solid;
+  position: fixed;
+}
+
+.home {
+  min-height: 110vh;
+  min-width: 90vw;
+  background-image: linear-gradient(to right, #808080, #333333);
+}
 
 /*# sourceMappingURL=style.css.map */
