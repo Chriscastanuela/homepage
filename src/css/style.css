@@ -38,6 +38,20 @@ body, html {
   background-image: linear-gradient(to right, #808080, #333333);
 }
 
+.review {
+  min-height: 20vh;
+  min-width: 100vw;
+  background-color: #F2F2F2;
+  border-top: #333333 2px solid;
+  border-bottom: #333333 2px solid;
+}
+
+.contact {
+  min-height: 60vh;
+  min-width: 100vw;
+  background-image: linear-gradient(to right, #808080, #333333);
+}
+
 .footer {
   min-height: 60vh;
   min-width: 100vw;
