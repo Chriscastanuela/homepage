@@ -4,12 +4,106 @@ body, html {
   padding: 0;
 }
 
+.menu {
+  visibility: hidden;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: 20vh;
+  background-color: #F2F2F2;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+.menu--header {
+  font-family: "Lato", sans-serif;
+  font-size: 500%;
+  color: #333333;
+  height: max-content;
+}
+
 .header {
   min-height: 10vh;
   min-width: 100vw;
   background-color: #333333;
   border-bottom: #f5f5f5 0.1px solid;
   position: fixed;
+}
+.header .header-name {
+  font-family: "Herr Von Muellerhoff", cursive;
+  color: #f5f5f5;
+  font-size: 500%;
+  margin-top: -10%;
+  margin-bottom: 0;
+  margin-left: 5vw;
+  margin-top: 2vh;
+  max-width: max-content;
+  display: inline-block;
+}
+.header .home__nav--button-x {
+  height: 5vh;
+  width: 11%;
+  cursor: pointer;
+  border-radius: 15%;
+  position: relative;
+  z-index: 3;
+  float: right;
+  right: 4%;
+  margin-top: 2vh;
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .home__nav--button-x div {
+  width: 75%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+}
+.header .home__nav--button-x span {
+  background: #333333;
+  width: 100%;
+  height: 2px;
+  border-radius: 100px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.5s, width 0.5s;
+}
+.header .home__nav--button-x .line-1 {
+  width: 50%;
+  transform: translate(-100%, -10px);
+}
+.header .home__nav--button-x .line-3 {
+  left: auto;
+  right: 0;
+  width: 50%;
+  transform: translate(0, 7px);
+}
+.header .home__nav--button-x-open .line-1 {
+  transform: translate(0, 0) rotate(-47deg);
+  transform-origin: 0 0;
+}
+.header .home__nav--button-x-open .line-3 {
+  transform: translate(-95%, 0) rotate(-45deg);
+  transform-origin: 100% 0;
+}
+.header .home__nav--button-x-open .line-2 {
+  transform: translate(-45%, -45%) rotate(45deg);
+}
+
+a {
+  color: inherit;
+  /* blue colors for links too */
+  text-decoration: inherit;
+  /* no underline */
 }
 
 .home {
