@@ -9,9 +9,16 @@ let visibility = false;
 const theHiddenThing = (itemInQuestion) => {
     if (visibility === false) {
         itemInQuestion.style.visibility = 'visible';
+
+        itemInQuestion.style.animationName = 'moveUp';
+        itemInQuestion.style.animationDuration = '.6s';
         visibility = true;
     } else {
         itemInQuestion.style.visibility = 'hidden';
+
+        itemInQuestion.style.animationName = 'null';
+        itemInQuestion.style.animationDuration = 'null';
+
         visibility = false;
     }
 

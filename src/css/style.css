@@ -1,3 +1,31 @@
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(2vh);
+  }
+  80% {
+    opacity: 0.2;
+    transform: translateY(-2vh);
+  }
+  100% {
+    opacity: 0.95;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-10vw);
+  }
+  80% {
+    opacity: 0.2;
+    transform: translate(0.25vw);
+  }
+  100% {
+    opacity: 0.95;
+    transform: translate(0);
+  }
+}
 body, html {
   font-size: 62.5%;
   margin: 0;
@@ -8,7 +36,6 @@ body, html {
   visibility: hidden;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  opacity: 0.95;
   border: 1px solid #333333;
   margin-top: 20vh;
   background-color: #F2F2F2;
@@ -45,6 +72,8 @@ body, html {
   margin-top: 2vh;
   max-width: max-content;
   display: inline-block;
+  animation-name: moveInRight;
+  animation-duration: 0.7s;
 }
 .header .home__nav--button-x {
   height: 5vh;
@@ -55,7 +84,7 @@ body, html {
   z-index: 3;
   float: right;
   right: 4%;
-  margin-top: 2vh;
+  margin-top: 2.5vh;
   background-color: #F2F2F2;
   display: flex;
   justify-content: center;
