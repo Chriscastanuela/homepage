@@ -59,8 +59,8 @@ body, html {
         display: inline-block;
         cursor: pointer;
         
-        animation-name: moveInRight;
-        animation-duration: .7s;
+        // animation-name: moveInRight;
+        // animation-duration: .7s;
     }
     .home__nav--button-x {
         height: 5vh;
@@ -76,8 +76,9 @@ body, html {
         display: flex;
         justify-content: center;
         align-items: center;
-        animation-name: moveInRight;
-        animation-duration: .7s;
+
+        // animation-name: moveInRight;
+        // animation-duration: .7s;
     }
     .home__nav--button-x div {
         width: 75%;
@@ -160,6 +161,8 @@ a {
         color: transparent;
         -webkit-text-stroke: 1px $white;
 
+        // animation-delay: 1s;
+
         // margin: 2vh 0 2vh 0;
     }
     &--name__li:first-child {
@@ -167,15 +170,31 @@ a {
     }
     &--name__li--christopher {
         animation-name: moveInRight;
-        animation-duration: 1.4s;
+        animation-duration: 1s;
     }
     &--name__li--anthony {
         animation-name: moveInLeft;
-        animation-duration: 2s;
+        animation-duration: 1.5s;
     }
     &--name__li--castanuela {
         animation-name: moveInRight;
-        animation-duration: 2.6s;
+        animation-duration: 2s;
+    }
+    .portrait {
+        &__div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &__img {
+            width: 50%;
+            height: auto;
+            border-radius: 50%;
+            border: 1px solid #333333;
+            background-color: $white;
+            animation-name: moveUp;
+            animation-duration: 2.5s;
+        }
     }
 }
 
