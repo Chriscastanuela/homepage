@@ -19,7 +19,21 @@
   }
   80% {
     opacity: 0.2;
-    transform: translate(0.25vw);
+    transform: translate(1vw);
+  }
+  100% {
+    opacity: 0.95;
+    transform: translate(0);
+  }
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10vw);
+  }
+  80% {
+    opacity: 0.2;
+    transform: translate(-1vw);
   }
   100% {
     opacity: 0.95;
@@ -59,7 +73,6 @@ body, html {
   color: #333333;
   height: max-content;
   cursor: pointer;
-  margin: 2vh 0 2vh 0;
 }
 
 .header {
@@ -157,6 +170,44 @@ a {
   min-height: 60vh;
   min-width: 100vw;
   background-image: linear-gradient(to right, #808080, #333333);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.hero ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 0 4vw;
+  width: max-content;
+  grid-row: 1;
+  align-self: center;
+  justify-self: center;
+}
+.hero--name__li {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  font-size: 600%;
+  font-weight: 550;
+  color: #333333;
+  height: max-content;
+  cursor: pointer;
+  color: transparent;
+  -webkit-text-stroke: 1px #f2f2f2;
+}
+.hero--name__li:first-child {
+  margin: 12vh 0 0 0;
+}
+.hero--name__li--christopher {
+  animation-name: moveInRight;
+  animation-duration: 1.4s;
+}
+.hero--name__li--anthony {
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+}
+.hero--name__li--castanuela {
+  animation-name: moveInRight;
+  animation-duration: 2.6s;
 }
 
 .projects_cta {

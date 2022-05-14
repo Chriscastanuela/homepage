@@ -19,7 +19,21 @@
     }
     80% {
         opacity: .2;
-        transform: translate(.25vw);
+        transform: translate(1vw);
+    }
+    100% {
+        opacity: .95;
+        transform: translate(0);
+    }
+};
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(10vw);
+    }
+    80% {
+        opacity: .2;
+        transform: translate(-1vw);
     }
     100% {
         opacity: .95;

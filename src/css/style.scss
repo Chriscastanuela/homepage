@@ -37,7 +37,7 @@ body, html {
         color: #333333;
         height: max-content;
         cursor: pointer;
-        margin: 2vh 0 2vh 0;
+        // margin: 2vh 0 2vh 0;
     }
 }
 
@@ -135,6 +135,48 @@ a {
     min-height: 60vh;
     min-width: 100vw;
     background-image: linear-gradient(to right, #808080, #333333);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 0 0 4vw;
+        width: max-content;
+
+        grid-row: 1;
+        align-self: center;
+        justify-self: center;
+    }
+    &--name__li {
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
+        margin: 0;
+        font-size: 600%;
+        font-weight: 550;
+        color: #333333;
+        height: max-content;
+        cursor: pointer;
+
+        color: transparent;
+        -webkit-text-stroke: 1px $white;
+
+        // margin: 2vh 0 2vh 0;
+    }
+    &--name__li:first-child {
+        margin: 12vh 0 0 0;
+    }
+    &--name__li--christopher {
+        animation-name: moveInRight;
+        animation-duration: 1.4s;
+    }
+    &--name__li--anthony {
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+    }
+    &--name__li--castanuela {
+        animation-name: moveInRight;
+        animation-duration: 2.6s;
+    }
 }
 
 .projects_cta {
