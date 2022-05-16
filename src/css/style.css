@@ -103,9 +103,9 @@ body, html {
 }
 .menu--option {
   font-family: "Lato", sans-serif;
-  font-size: 500%;
   font-weight: 550;
   color: #333333;
+  font-size: 500%;
   height: max-content;
   cursor: pointer;
 }
@@ -264,12 +264,36 @@ a {
   animation-duration: 2.5s;
 }
 
-.projects_cta {
+.projects_cta--div {
   min-height: 20vh;
   min-width: 100vw;
   background-color: #f2f2f2;
   border-top: #333333 2px solid;
   border-bottom: #333333 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects_cta--button {
+  width: 50vw;
+  height: 10vh;
+  border-radius: 30px;
+  border: 1px solid #333333;
+  background-color: #333333;
+  font-family: "Lato", sans-serif;
+  font-weight: 550;
+  color: #f2f2f2;
+  font-size: 300%;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.projects_cta--button:hover {
+  box-shadow: 0 2.5rem 3rem #333333;
+  transform: translateY(-7px);
+}
+.projects_cta--button:active {
+  box-shadow: 0 1.75rem 1.5rem #333333;
+  transform: translateY(0px);
 }
 
 .experience {
