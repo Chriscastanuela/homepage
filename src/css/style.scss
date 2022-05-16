@@ -25,6 +25,7 @@ body, html {
     bottom: 0;
     display: flex;
     justify-content: center;
+    // opacity: .9;
     ul {
         list-style-type: none;
         padding: 0;
@@ -37,7 +38,16 @@ body, html {
         color: #333333;
         height: max-content;
         cursor: pointer;
-        // margin: 2vh 0 2vh 0;
+    }
+    &--option:hover {
+        animation-name: shake-horizontal;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        // animation-fill-mode: none;
+        background-color: $white;
     }
 }
 
