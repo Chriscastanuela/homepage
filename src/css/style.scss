@@ -1,26 +1,7 @@
-@import './anim.scss';
 //font-family: 'Herr Von Muellerhoff', cursive;
 //font-family: 'Lato', sans-serif;
-
-$white: #f2f2f2;
-$two: #D0D3D8;
-$three: #AAB6BE;
-$four: #839AA1;
-$five: #5F807F;
-$six: #43655A;
-
-@mixin hoverButton {
-    transition: .2s;
-    cursor: pointer;
-    &:hover {
-        box-shadow: 0 2.5rem 3rem #333333;
-        transform: translateY(-7px);
-    }
-    &:active {
-        box-shadow: 0 1.75rem 1.5rem #333333;
-        transform: translateY(0px);
-    }
-}
+@import './anim.scss';
+@import './vars.scss';
 
 body, html {
     font-size: 62.5%;
@@ -43,19 +24,18 @@ body, html {
     bottom: 0;
     display: flex;
     justify-content: center;
-    // opacity: .9;
     ul {
         list-style-type: none;
         padding: 0;
     }
     &--option {
-        // text-decoration: none;
         font-family: 'Lato', sans-serif;
         font-weight: 550;
         color: #333333;
         font-size: 500%;
         height: max-content;
         cursor: pointer;
+        margin: 5%;
     }
     &--option:hover {
         animation-name: shake-horizontal;
@@ -66,6 +46,9 @@ body, html {
         animation-direction: normal;
         // animation-fill-mode: none;
         background-color: $white;
+    }
+    &--option:first-child {
+        margin-top: 10% !important;
     }
 }
 
@@ -86,9 +69,6 @@ body, html {
         max-width: max-content;
         display: inline-block;
         cursor: pointer;
-        
-        // animation-name: moveInRight;
-        // animation-duration: .7s;
     }
     .home__nav--button-x {
         height: 5vh;
@@ -101,9 +81,7 @@ body, html {
         right: 4%;
         margin-top: 2.5vh;
         background-color: $white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex--center;
 
         // animation-name: moveInRight;
         // animation-duration: .7s;
@@ -161,7 +139,6 @@ a {
 }
 
 .hero {
-    // min-height: max-content;
     width: 100vw;
     background-image: linear-gradient(to right, #808080, #333333);
     display: grid;
@@ -188,21 +165,9 @@ a {
         // height: max-content;
     }
     &--name__li {
-        text-decoration: none;
-        font-family: 'Lato', sans-serif;
-        margin: 0;
-        font-size: 600%;
-        font-weight: 550;
-        color: #333333;
-        height: max-content;
-        cursor: pointer;
-
+        @include header--first;
         color: transparent;
         -webkit-text-stroke: 1px $white;
-
-        // animation-delay: 1s;
-
-        // margin: 2vh 0 2vh 0;
     }
     &--name__li:first-child {
         margin: 12vh 0 0 0;
@@ -220,14 +185,10 @@ a {
         animation-duration: 2s;
     }
     .portrait {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex--center;
         &__div {
             width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex--center;
         }
         &__img {
             margin: 10% 0;
@@ -246,40 +207,42 @@ a {
         min-height: 20vh;
         min-width: 100vw;
         background-color: $white;
-        border-top: #333333 2px solid;
-        border-bottom: #333333 2px solid;
+        border-top: $border--black;
+        border-bottom: $border--black;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex--center;
     };
     &--button {
+        @include hoverButton;
         width: 50vw;
         height: 10vh;
         border-radius: 30px;
         border: 1px solid #333333;
         background-color: #333333;
-        // background-image: linear-gradient(to right, #808080, #333333);
-        font-family: 'Lato', sans-serif;
-        font-weight: 550;
-        color: $white;
-        font-size: 300%;
-        @include hoverButton;
+
+        @include header--second;
     }
 }
 
 .experience {
-    min-height: 80vh;
+    min-height: max-content;
     min-width: 100vw;
     background-image: linear-gradient(to right, #808080, #333333);
+    &--header {
+        @include header--first;
+        &__div {
+            height: max-content;
+            @include flex--center;
+        }
+    }
 }
 
 .review {
     min-height: 20vh;
     min-width: 100vw;
     background-color: $white;
-    border-top: #333333 2px solid;
-    border-bottom: #333333 2px solid;
+    border-top: $border--black;
+    border-bottom: $border--black;
 }
 
 .contact {
@@ -292,7 +255,7 @@ a {
     min-height: 60vh;
     min-width: 100vw;
     background-color: #333333;
-    border-top: $white .1px solid;
+    border-top: $border--white;
 }
 
 @media only screen and (min-width: 600px) {

@@ -1,0 +1,42 @@
+$white: #f2f2f2;
+$two: #D0D3D8;
+$three: #AAB6BE;
+$four: #839AA1;
+$five: #5F807F;
+$six: #43655A;
+
+$border--white: $white .1px solid;
+$border--black: #333333 2px solid;
+
+@mixin flex--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin hoverButton {
+    transition: .2s;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 2.5rem 3rem #333333;
+        transform: translateY(-7px);
+    }
+    &:active {
+        box-shadow: 0 1.75rem 1.5rem #333333;
+        transform: translateY(0px);
+    }
+}
+
+@mixin header--first {
+    font-family: 'Lato', sans-serif;
+    font-size: 600%;
+    font-weight: 550;
+    color: #f2f2f2;
+}
+
+@mixin header--second {
+    font-family: 'Lato', sans-serif;
+    font-size: 300%;
+    font-weight: 550;
+    color: #f2f2f2;
+}
