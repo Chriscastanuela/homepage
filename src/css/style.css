@@ -207,11 +207,18 @@ a {
 }
 
 .hero {
-  min-height: 60vh;
-  min-width: 100vw;
+  width: 100vw;
   background-image: linear-gradient(to right, #808080, #333333);
   display: grid;
-  grid-template-rows: 1fr 1fr;
+}
+.hero--top, .hero--bottom {
+  max-height: max-content;
+}
+.hero--top {
+  grid-area: 1;
+}
+.hero--bottom {
+  grid-area: 2;
 }
 .hero ul {
   list-style-type: none;
@@ -249,14 +256,20 @@ a {
   animation-name: moveInRight;
   animation-duration: 2s;
 }
+.hero .portrait {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .hero .portrait__div {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .hero .portrait__img {
-  width: 50%;
-  height: auto;
+  margin: 10% 0;
+  width: 15rem;
   border-radius: 50%;
   border: 1px solid #333333;
   background-color: #f2f2f2;

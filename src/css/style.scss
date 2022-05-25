@@ -3,6 +3,11 @@
 //font-family: 'Lato', sans-serif;
 
 $white: #f2f2f2;
+$two: #D0D3D8;
+$three: #AAB6BE;
+$four: #839AA1;
+$five: #5F807F;
+$six: #43655A;
 
 @mixin hoverButton {
     transition: .2s;
@@ -156,11 +161,19 @@ a {
 }
 
 .hero {
-    min-height: 60vh;
-    min-width: 100vw;
+    // min-height: max-content;
+    width: 100vw;
     background-image: linear-gradient(to right, #808080, #333333);
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    &--top, &--bottom {
+        max-height: max-content;
+    }
+    &--top {
+        grid-area: 1;
+    }
+    &--bottom {
+        grid-area: 2;
+    }
     ul {
         list-style-type: none;
         padding: 0;
@@ -170,6 +183,9 @@ a {
         grid-row: 1;
         align-self: center;
         justify-self: center;
+    }
+    &--name__div {
+        // height: max-content;
     }
     &--name__li {
         text-decoration: none;
@@ -204,14 +220,18 @@ a {
         animation-duration: 2s;
     }
     .portrait {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         &__div {
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
         }
         &__img {
-            width: 50%;
-            height: auto;
+            margin: 10% 0;
+            width: 15rem;
             border-radius: 50%;
             border: 1px solid #333333;
             background-color: $white;
@@ -275,18 +295,18 @@ a {
     border-top: $white .1px solid;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
     //
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
     //
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
     //
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     //
 }
