@@ -309,18 +309,18 @@ a {
   transform: translateY(0px);
 }
 
-.experience {
+.resume {
   min-height: max-content;
   min-width: 100vw;
   background-image: linear-gradient(to right, #808080, #333333);
 }
-.experience--header {
+.resume--header {
   font-family: "Lato", sans-serif;
   font-size: 600%;
   font-weight: 550;
   color: #f2f2f2;
 }
-.experience--header__div {
+.resume--header__div {
   height: max-content;
   display: flex;
   align-items: center;
