@@ -130,7 +130,7 @@ body, html {
   border-bottom: #f2f2f2 0.1px solid;
   position: fixed;
 }
-.header .header-name {
+.header .header--name {
   font-family: "Herr Von Muellerhoff", cursive;
   color: #f2f2f2;
   font-size: 500%;
@@ -142,7 +142,7 @@ body, html {
   display: inline-block;
   cursor: pointer;
 }
-.header .home__nav--button-x {
+.header .header--button__x {
   height: 5vh;
   width: 11%;
   cursor: pointer;
@@ -157,13 +157,13 @@ body, html {
   align-items: center;
   justify-content: center;
 }
-.header .home__nav--button-x div {
+.header .header--button__x div {
   width: 75%;
   height: 100%;
   margin: 0;
   position: absolute;
 }
-.header .home__nav--button-x span {
+.header .header--button__x span {
   background: #333333;
   width: 100%;
   height: 2px;
@@ -175,25 +175,25 @@ body, html {
   transform: translate(-50%, -50%);
   transition: transform 0.5s, width 0.5s;
 }
-.header .home__nav--button-x .line-1 {
+.header .header--button__x .line-1 {
   width: 50%;
   transform: translate(-100%, -10px);
 }
-.header .home__nav--button-x .line-3 {
+.header .header--button__x .line-3 {
   left: auto;
   right: 0;
   width: 50%;
   transform: translate(0, 7px);
 }
-.header .home__nav--button-x-open .line-1 {
+.header .header--button__x-open .line-1 {
   transform: translate(0, 0) rotate(-47deg);
   transform-origin: 0 0;
 }
-.header .home__nav--button-x-open .line-3 {
+.header .header--button__x-open .line-3 {
   transform: translate(-95%, 0) rotate(-45deg);
   transform-origin: 100% 0;
 }
-.header .home__nav--button-x-open .line-2 {
+.header .header--button__x-open .line-2 {
   transform: translate(-45%, -45%) rotate(45deg);
 }
 

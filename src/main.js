@@ -1,4 +1,4 @@
-const xButton = document.getElementById('home__nav--button-x');
+const xButton = document.getElementById('header--button__x');
 
 const homeSection = document.querySelector('.home');
 const projectsSection = document.querySelector('.projects');
@@ -24,7 +24,7 @@ const theHiddenThing = (itemInQuestion) => {
 
 };
 const openAndClose = () => {
-    xButton.classList.toggle('home__nav--button-x-open');
+    xButton.classList.toggle('header--button__x-open');
     theHiddenThing(menu);
 }
 
