@@ -32,11 +32,52 @@ $border--black: #333333 2px solid;
     font-size: 600%;
     font-weight: 550;
     color: #f2f2f2;
+    margin: 0;
 }
 
 @mixin header--second {
     font-family: 'Lato', sans-serif;
     font-size: 300%;
     font-weight: 550;
-    color: #f2f2f2;
+    color: #150907;
+}
+
+@mixin header--third {
+    font-family: 'Lato', sans-serif;
+    font-size: 250%;
+    font-weight: 550;
+    color: #150907;
+}
+
+@mixin paragraph {
+    font-family: 'Lato', sans-serif;
+    font-size: 250%;
+    font-weight: 550;
+    color: #150907;
+}
+
+@mixin title-div {
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    margin: 10% 0;
+}
+
+@mixin title-h1 {
+    @include header--first;
+    color: transparent;
+    -webkit-text-stroke: 1.5px $white;
+
+    margin-top: 2%;
+}
+
+@mixin box {
+    background-color: $white;
+    width: 80%;
+    margin-bottom: 10%;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    overflow: auto;
 }

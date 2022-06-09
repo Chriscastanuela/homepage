@@ -1,30 +1,36 @@
 <!-- npm i -g sass | sass --watch style.scss:./css/style.css -->
 
 <!-- 
-******Projects
+*Publications
+*Education
+*Footer 
+-->
 
-School Registration Site, React | React Router | SASS/SCSS | Fetch API | Jest | UserEvent | Express
-
-"School Registration" is a full stack website that can register a new student, log a student in, and allows students to register for a course. The back end was created using Express and the front end utilizes React and the Fetch API. The website uses "GET" requests to obtain user data and "POST" requests to register a new user
-
-
-Chuck, Local Storage | React | Fetch API | Sass | Jest
-
-The "Chuck" project is a React application that is able to fetch jokes from an external API, add jokes to a list of "liked" jokes when on the Main page, and utilize React Router to go to different pages
-Fitlit Activity Tracker, Chart.js | Mocha | Chai
-"Fitlit Activity Tracker" is a web application that selects a random user upon loading and displays charts of the user's health and fitness information allowing them to track their fitness progress
-------------------------------------------------------------------------------
-------------------------------------------------------------------------------
-------------------------------------------------------------------------------
-------------------------------------------------------------------------------
-******Education
+<!-- 
+******************
+Education
+******************
 Turing School of Software and Design
+
+*****************
+Footer - Contact Info
+******************
+Christopher Anthony Castanuela 
+Software Engineer 
+210-310-6947 
+Chriscastanuela@ymail.com 
+www.linkedin.com/in/christopher-castanuela
+https://github.com/Chriscastanuela 
+
+
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
-******Skills
-Javascript, React, ES6, CSS, Sass, HTML, Git, Github, Jest, Fetch API, Redux, UX UI Design, Mocha, Chai, Node.js, Webpack, TDD, NPM, OOP, Unit testing, Integration testing, Local storage, Chart.js, Express
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
@@ -58,20 +64,4 @@ Insurance Adjuster, E. A. Renfroe 06.2016 – present
 
 Logistics Specialist, United States Navy 11.2008 – 05.2016 
 - Coordinated supply operations for over 7,000 sailors on US Navy aircraft carrier “USS Enterprise" resulting in two successful deployments overseas in support of Operation Enduring Freedom
-------------------------------------------------------------------------------
-------------------------------------------------------------------------------
-------------------------------------------------------------------------------
-------------------------------------------------------------------------------
-******Publications
-Tab Jumper 11.2020 "Tab-Jumper" is a Visual Studio Code extension that allows a user to easily jump to a specific VSCode tab or tab group and reposition tabs/tab groups with different commands
-------------------------------------------------------------------------------
-------------------------------------------------------------------------------
-------------------------------------------------------------------------------
-------------------------------------------------------------------------------
-Christopher Anthony Castanuela 
-Software Engineer 
-210-310-6947 
-Chriscastanuela@ymail.com 
-www.linkedin.com/in/christopher-castanuela
-https://github.com/Chriscastanuela 
  -->

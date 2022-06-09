@@ -16,27 +16,12 @@
     <title>Chris Castanuela</title>
 </head>
 <body>
-    <section class='menu'>
-        <ul>
-            <li class='menu--option menu--option__home'><a href='#home'>Home</a></li>
-            <li class='menu--option menu--option__experience'><a href='#experience'>Experience</a></li>
-            <li class='menu--option menu--option__contact'><a href='#contact'>Contact</a></li>
-            <li class='menu--option menu--option__projects'><a href='./projects.html'>Projects</a></li>
-        </ul>
-    </section>
-    <section class='header'>
-        <h1 class='header--name'><a href='#'>Chris Castanuela</a></h1>
-        <div class='header--button__x' id='header--button__x'>
-            <div>
-                <span class='line-1'></span>
-                <span class='line-2'></span>
-                <span class='line-3'></span>
-            </div>
-        </div>
-    </section>
-    <section class='home' id='home'>
-        <div class='hero'>
-            <div class="hero--top">
+    <div class="hero">
+        <!-- <div class="video"> -->
+            <video autoplay muted loop id="myVideo">
+                <source src="/src/assets/video.mp4" type="video/mp4">
+            </video>
+            <div class="content">
                 <div class='hero--name hero--name__div'>
                     <ul class='hero--name hero--name__ul'>
                         <li class='hero--name hero--name__li hero--name__li--christopher'>CHRISTOPHER</li>
@@ -45,30 +30,130 @@
                     </ul>
                 </div>
             </div>
-            <div class="hero--bottom">
-                <div class="portrait__div">
-                    <img src="./assets/SchoolNoBackground.png" alt="my school portrait" class="portrait__img">
-                </div>
+        <!-- </div> -->
+    </div>
+    <section class='projects'>
+        <div class="projects--title__div">
+            <h1 class="projects--title__h1">PROJECTS</h1>
+        </div>
+        <div class="project project--school-registration">
+            <div class="project--title__div">
+                <h1 class="project--title__h1">
+                    School Registration Site 
+                </h1>
+            </div>
+            <div class="project--repo__div">
+                <p class="project--repo__link">
+                    <a onclick='window.open("https://github.com/Chriscastanuela/school-registration-fe", "_blank", "width=800, height=800");'>&rarr;&nbsp;Link to Repository</a>
+                </p>
+            </div>
+            <div class="project--techs__div">
+                <h2 class="project--techs__h2">
+                    React | React Router | SCSS | Fetch API | Jest | UserEvent | Express | ES6
+                </h2>
+            </div>
+            <div class="project--gif__div">
+                <img src="./assets/project-gif-1.gif" alt="gif of project" class="project--gif__img">
+            </div>
+            <div class="project--paragraph__div">
+                <p class="project--paragraph__p">
+                    "School Registration Site" is a full stack web application that can register a new student, log a student in, and allows students to register for a course. The back end was created using Express and the front end utilizes React and the Fetch API. The website uses "GET" requests to obtain user data and "POST" requests to register a new user
+                </p>
             </div>
         </div>
-        <div class='projects_cta projects_cta--div'>
-            <a href="./projects.html"><input type="button" name="projects" class='projects_cta projects_cta--button' id="projects_cta--button" value='Projects &rarr;'></a>
-        </div>
-        <div class='resume' id='resume'>
-            <div class="resume--header__div">
-                <h1 class="resume--header">Resume</h1>
+        <div class="project project--fitlit">
+            <div class="project--title__div">
+                <h1 class="project--title__h1">
+                    Fitlit Activity Tracker
+                </h1>
             </div>
-            <div class="resume--content">
-                <div class="resume--content__header--div">
-                    <h2 class="resume--content__header"></h2>
-                </div>
+            <div class="project--repo__div">
+                <p class="project--repo__link">
+                    <a onclick='window.open("https://github.com/Chriscastanuela/fitlit-activity-tracker", "_blank", "width=800, height=800");'>&rarr;&nbsp;Link to Repository</a>
+                </p>
+            </div>
+            <div class="project--techs__div">
+                <h2 class="project--techs__h2">
+                    ES6 | Chart.js | Mocha | Chai
+                </h2>
+            </div>
+            <div class="project--gif__div">
+                <img src="https://user-images.githubusercontent.com/62910433/100301906-7154ae00-2f56-11eb-96ca-83d97f96b3d7.gif" alt="gif of project" class="project--gif__img">
+            </div>
+            <div class="project--paragraph__div">
+                <p class="project--paragraph__p">
+                    Collaborative project - Fitness tracker that selects a random user upon loading and displays interactive charts of their health and fitness information on the DOM allowing them to track fitness progress
+                </p>
             </div>
         </div>
-        <div class='review'></div>
-        <div class='contact' id='contact'></div>
-        <div class='footer'></div>
     </section>
-    <section class='projects' hidden></section>
+    <section class='skills'>
+        <div class="skills--title__div">
+            <h1 class="skills--title__h1">SKILLS</h1>
+        </div>
+        <div class="skill-section skill-section--current">
+            <div class="skill-section--title__div">
+                <h1 class="skill-section--title__h1">
+                    Current
+                </h1>
+            </div>
+            <div class="skill-section--skills__div">
+                <h2 class="skill-section--skills__h2">
+                    Javascript | ES6 | Node.js | Fetch API | Express | React | Redux | CSS | SASS | HTML | XML | Git | Github | Jest | Mocha | Chai | TDD | NPM | OOP | Unit testing | Integration testing | Local storage | Chart.js
+                </h2>
+            </div>
+        </div>
+        <div class="skill-section skill-section--learning">
+            <div class="skill-section--title__div">
+                <h1 class="skill-section--title__h1">
+                    Learning / Interested In
+                </h1>
+            </div>
+            <div class="skill-section--skills__div">
+                <h2 class="skill-section--skills__h2">
+                    Blockchain | Angular | Electron | Typescript | Flutter | React Native | Docker | Kubernetes | MongoDB |  SQL | C# | C++ | Python
+                </h2>
+            </div>
+        </div>
+    </section>
+    <section class='pubs'>
+        <div class="pubs--title__div">
+            <h1 class="pubs--title__h1">PUBLICATIONS</h1>
+        </div>
+        <div class="pub pub--tab-jumper">
+            <div class="pub--title__div">
+                <h1 class="pub--title__h1">
+                    Tab Jumper
+                </h1>
+            </div>
+            <div class="pub--details__div">
+                <h2 class="pub--details__h2">
+                    Tab Jumper 11.2020
+                </h2>
+            </div>
+            <div class="pub--link__div">
+                <p class="pub--link__link">
+                    <a onclick='window.open("https://marketplace.visualstudio.com/items?itemName=ChristopherAnthonyCastanuela.tab-jumper", "_blank", "width=800, height=800");'>&rarr;&nbsp;Link to extension</a>
+                </p>
+            </div>
+            <div class="pub--gif__div">
+                <img src="https://user-images.githubusercontent.com/62910433/99739283-a5792c00-2a89-11eb-953f-acad4b73df96.gif" alt="gif of project" class="pub--gif__img">
+            </div>
+            <div class="pub--paragraph__div">
+                <p class="pub--paragraph__p">
+                    An extension for Visual Studio Code that allows a user to easily jump to a specific VSCode tab or tab group and reposition tabs/tab groups with different commands
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class='education'>
+        <div class="pubs--title__div">
+            <h1 class="pubs--title__h1">EDUCATION</h1>
+        </div>
+    </section>
+    <section class='footer'></section>
     <script src='./main.js'></script>
 </body>
 </html>
+
+<!--  -->
