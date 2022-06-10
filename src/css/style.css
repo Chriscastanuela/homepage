@@ -361,6 +361,7 @@ body, html {
   min-height: 50vh;
   min-width: 100vw;
   overflow-y: auto;
+  padding-bottom: 20%;
 }
 .education--title__div {
   display: flex;
@@ -420,9 +421,37 @@ body, html {
 
 .footer {
   background-color: #150907;
-  min-height: 50vh;
+  min-height: 10vh;
   min-width: 100vw;
   overflow-y: auto;
+}
+.footer-content {
+  background-color: #f2f2f2;
+  width: 80%;
+  margin-bottom: 10%;
+  overflow: auto;
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+}
+.footer-content:last-child {
+  margin-bottom: 0;
+}
+
+.email--div {
+  font-family: "Lato", sans-serif;
+  font-size: 250%;
+  font-weight: 550;
+  color: #150907;
+}
+
+.links--div {
+  font-family: "Lato", sans-serif;
+  font-size: 250%;
+  font-weight: 550;
+  color: #150907;
 }
 
 /*# sourceMappingURL=style.css.map */
