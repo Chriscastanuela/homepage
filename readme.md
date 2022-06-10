@@ -5,13 +5,6 @@
 -->
 
 <!-- 
-*****************
-Footer - Contact Info
-******************
-
-www.linkedin.com/in/christopher-castanuela | https://github.com/Chriscastanuela | https://twitter.com/thechriscast_ | https://www.youtube.com/channel/UCK2dW7PyeWDh9vKSp6ibgcQ |
-
-
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------

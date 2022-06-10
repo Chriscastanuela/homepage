@@ -118,8 +118,8 @@
 }
 
 a {
-    color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
+    color: inherit;
+    text-decoration: inherit; 
 }
 
 .home {
@@ -204,5 +204,21 @@ a {
     min-height: 60vh;
     min-width: 100vw;
     background-image: linear-gradient(to right, #808080, #333333);
+}
+
+@media only screen and (min-width: 600px) {
+    //
+}
+
+@media only screen and (min-width: 768px) {
+    //
+}
+
+@media only screen and (min-width: 992px) {
+    //
+}
+
+@media only screen and (min-width: 1200px) {
+    //
 }
 */

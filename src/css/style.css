@@ -84,6 +84,7 @@ body, html {
 .hero {
   height: 100vh;
   overflow: hidden;
+  margin-top: -0.1%;
   width: 100vw;
 }
 .hero #myVideo {
@@ -141,6 +142,7 @@ body, html {
   min-height: 100vh;
   min-width: 100vw;
   overflow: auto;
+  margin-top: -0.1%;
 }
 .projects--title__div {
   display: flex;
@@ -221,6 +223,7 @@ body, html {
   min-height: 100vh;
   min-width: 100vw;
   overflow-y: auto;
+  margin-top: -0.1%;
 }
 .skills--title__div {
   display: flex;
@@ -282,6 +285,7 @@ body, html {
   min-height: 50vh;
   min-width: 100vw;
   overflow-y: auto;
+  margin-top: -0.1%;
 }
 .pubs--title__div {
   display: flex;
@@ -362,6 +366,7 @@ body, html {
   min-width: 100vw;
   overflow-y: auto;
   padding-bottom: 20%;
+  margin-top: -0.1%;
 }
 .education--title__div {
   display: flex;
@@ -424,6 +429,7 @@ body, html {
   min-height: 10vh;
   min-width: 100vw;
   overflow-y: auto;
+  margin-top: -0.1%;
 }
 .footer-content {
   background-color: #f2f2f2;
@@ -452,6 +458,34 @@ body, html {
   font-size: 250%;
   font-weight: 550;
   color: #150907;
+}
+
+@media only screen and (min-width: 540px) {
+  .project, .skill-section, .pub, .edu {
+    width: 45% !important;
+  }
+
+  .project--school-registration {
+    float: left !important;
+  }
+
+  .project--fitlit {
+    float: right !important;
+  }
+
+  .skill-section--current {
+    float: left !important;
+  }
+
+  .skill-section--learning {
+    float: right !important;
+  }
+
+  .pubs, .education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
