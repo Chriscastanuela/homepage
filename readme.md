@@ -1,17 +1,10 @@
 <!-- npm i -g sass | sass --watch style.scss:./css/style.css -->
 
 <!-- 
-*Publications
-*Education
 *Footer 
 -->
 
 <!-- 
-******************
-Education
-******************
-Turing School of Software and Design
-
 *****************
 Footer - Contact Info
 ******************

@@ -308,9 +308,23 @@ body, html {
   width: 80%;
   margin-bottom: 10%;
   overflow: auto;
+  float: right;
 }
 .pub:last-child {
   margin-bottom: 0;
+}
+.pub--title__div {
+  display: flex;
+  align-items: center;
+}
+.pub--title__h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 600%;
+  font-weight: 550;
+  color: #f2f2f2;
+  margin: 0;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #150907;
 }
 .pub--link__div {
   margin: 0 3%;
@@ -330,19 +344,6 @@ body, html {
   font-weight: 550;
   color: #150907;
 }
-.pub--title__div {
-  display: flex;
-  align-items: center;
-}
-.pub--title__h1 {
-  font-family: "Lato", sans-serif;
-  font-size: 600%;
-  font-weight: 550;
-  color: #f2f2f2;
-  margin: 0;
-  color: transparent;
-  -webkit-text-stroke: 1.5px #150907;
-}
 .pub--paragraph__div {
   margin: 0 3%;
   font-family: "Lato", sans-serif;
@@ -357,7 +358,7 @@ body, html {
 
 .education {
   background-color: #150907;
-  min-height: 100vh;
+  min-height: 50vh;
   min-width: 100vw;
   overflow-y: auto;
 }
@@ -378,10 +379,50 @@ body, html {
   margin-top: 2%;
 }
 
+.edu {
+  background-color: #f2f2f2;
+  width: 80%;
+  margin-bottom: 10%;
+  overflow: auto;
+}
+.edu:last-child {
+  margin-bottom: 0;
+}
+.edu--title__div {
+  display: flex;
+  align-items: center;
+}
+.edu--title__h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 600%;
+  font-weight: 550;
+  color: #f2f2f2;
+  margin: 0;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #150907;
+}
+.edu--details__div {
+  margin: 0 3%;
+}
+.edu--details__h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 300%;
+  font-weight: 550;
+  color: #150907;
+}
+.edu--paragraph__div {
+  margin: 0 3%;
+  font-family: "Lato", sans-serif;
+  font-size: 250%;
+  font-weight: 550;
+  color: #150907;
+}
+
 .footer {
   background-color: #150907;
+  min-height: 50vh;
   min-width: 100vw;
-  min-height: 100vh;
+  overflow-y: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

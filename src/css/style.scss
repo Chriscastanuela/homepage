@@ -187,6 +187,16 @@ body, html {
 
 .pub {
     @include box;
+    float: right;
+    &--title__div {
+        display: flex;
+        align-items: center;
+    }
+    &--title__h1 {
+        @include header--first;
+        color: transparent;
+        -webkit-text-stroke: 1.5px #150907;
+    }
     &--link__div {
         margin: 0 3%;
         a {
@@ -201,15 +211,6 @@ body, html {
             @include header--second;
         }
     }
-    &--title__div {
-        display: flex;
-        align-items: center;
-    }
-    &--title__h1 {
-        @include header--first;
-        color: transparent;
-        -webkit-text-stroke: 1.5px #150907;
-    }
     &--paragraph__div {
         margin: 0 3%;
         @include paragraph;
@@ -222,7 +223,7 @@ body, html {
 
 .education {
     background-color: #150907;
-    min-height: 100vh;
+    min-height: 50vh;
     min-width: 100vw;
     overflow-y: auto;
     &--title__div {
@@ -233,11 +234,36 @@ body, html {
     }
 }
 
+.edu {
+    @include box;
+    &--title__div {
+        display: flex;
+        align-items: center;
+    }
+    &--title__h1 {
+        @include header--first;
+        color: transparent;
+        -webkit-text-stroke: 1.5px #150907;
+    }
+    &--details {
+        &__div {
+            margin: 0 3%;
+        }
+        &__h2 {
+            @include header--second;
+        }
+    }
+    &--paragraph__div {
+        margin: 0 3%;
+        @include paragraph;
+    }
+}
+
 .footer {
     background-color: #150907;
+    min-height: 50vh;
     min-width: 100vw;
-
-    min-height: 100vh;
+    overflow-y: auto;
 }
 
 @media only screen and (min-width: 600px) {
