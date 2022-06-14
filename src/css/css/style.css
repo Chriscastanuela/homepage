@@ -118,7 +118,7 @@ a {
 }
 .hero--name__li {
   font-family: "Lato", sans-serif;
-  font-size: 650%;
+  font-size: 600%;
   font-weight: 550;
   color: #f2f2f2;
   margin: 0;
@@ -156,7 +156,7 @@ a {
 }
 .projects--title__h1 {
   font-family: "Lato", sans-serif;
-  font-size: 650%;
+  font-size: 600%;
   font-weight: 550;
   color: #f2f2f2;
   margin: 0;
@@ -178,7 +178,7 @@ a {
 }
 .projects .project--repo__div a {
   font-family: "Lato", sans-serif;
-  font-size: 300%;
+  font-size: 250%;
   font-weight: 550;
   color: #150907;
 }
@@ -194,7 +194,7 @@ a {
 }
 .projects .project--title__h1 {
   font-family: "Lato", sans-serif;
-  font-size: 650%;
+  font-size: 600%;
   font-weight: 550;
   color: #f2f2f2;
   margin: 0;
@@ -203,28 +203,31 @@ a {
 }
 .projects .project--gif__img {
   width: 100%;
-  margin: 5% 0 0 0;
+  margin: 10% 0;
 }
 .projects .project--techs__div {
   margin: 0 3%;
+  font-family: "Lato", sans-serif;
+  font-size: 250%;
+  font-weight: 550;
+  color: #150907;
 }
 .projects .project--techs__h2 {
-  margin-top: 10%;
   font-family: "Lato", sans-serif;
-  font-size: 400%;
+  font-size: 300%;
   font-weight: 550;
   color: #150907;
 }
 .projects .project--techs__p {
   font-family: "Lato", sans-serif;
-  font-size: 300%;
+  font-size: 250%;
   font-weight: 550;
   color: #150907;
 }
 .projects .project--paragraph__div {
   margin: 0 3%;
   font-family: "Lato", sans-serif;
-  font-size: 300%;
+  font-size: 250%;
   font-weight: 550;
   color: #150907;
 }
@@ -244,7 +247,7 @@ a {
 }
 .skills--title__h1 {
   font-family: "Lato", sans-serif;
-  font-size: 650%;
+  font-size: 600%;
   font-weight: 550;
   color: #f2f2f2;
   margin: 0;
@@ -274,7 +277,7 @@ a {
 }
 .skill-section--title__h1 {
   font-family: "Lato", sans-serif;
-  font-size: 650%;
+  font-size: 600%;
   font-weight: 550;
   color: #f2f2f2;
   margin: 0;
@@ -286,7 +289,7 @@ a {
 }
 .skill-section--skills__h2 {
   font-family: "Lato", sans-serif;
-  font-size: 400%;
+  font-size: 300%;
   font-weight: 550;
   color: #150907;
 }
@@ -306,7 +309,7 @@ a {
 }
 .pubs--title__h1 {
   font-family: "Lato", sans-serif;
-  font-size: 650%;
+  font-size: 600%;
   font-weight: 550;
   color: #f2f2f2;
   margin: 0;
@@ -334,7 +337,7 @@ a {
 }
 .pub--title__h1 {
   font-family: "Lato", sans-serif;
-  font-size: 650%;
+  font-size: 600%;
   font-weight: 550;
   color: #f2f2f2;
   margin: 0;
@@ -346,7 +349,7 @@ a {
 }
 .pub--link__div a {
   font-family: "Lato", sans-serif;
-  font-size: 300%;
+  font-size: 250%;
   font-weight: 550;
   color: #150907;
 }
@@ -355,14 +358,14 @@ a {
 }
 .pub--details__h2 {
   font-family: "Lato", sans-serif;
-  font-size: 400%;
+  font-size: 300%;
   font-weight: 550;
   color: #150907;
 }
 .pub--paragraph__div {
   margin: 0 3%;
   font-family: "Lato", sans-serif;
-  font-size: 300%;
+  font-size: 250%;
   font-weight: 550;
   color: #150907;
 }
@@ -387,7 +390,7 @@ a {
 }
 .education--title__h1 {
   font-family: "Lato", sans-serif;
-  font-size: 650%;
+  font-size: 600%;
   font-weight: 550;
   color: #f2f2f2;
   margin: 0;
@@ -411,7 +414,7 @@ a {
 }
 .edu--title__h1 {
   font-family: "Lato", sans-serif;
-  font-size: 650%;
+  font-size: 600%;
   font-weight: 550;
   color: #f2f2f2;
   margin: 0;
@@ -423,14 +426,14 @@ a {
 }
 .edu--details__h2 {
   font-family: "Lato", sans-serif;
-  font-size: 400%;
+  font-size: 300%;
   font-weight: 550;
   color: #150907;
 }
 .edu--paragraph__div {
   margin: 0 3%;
   font-family: "Lato", sans-serif;
-  font-size: 300%;
+  font-size: 250%;
   font-weight: 550;
   color: #150907;
 }
@@ -459,14 +462,14 @@ a {
 
 .email--div {
   font-family: "Lato", sans-serif;
-  font-size: 300%;
+  font-size: 250%;
   font-weight: 550;
   color: #150907;
 }
 
 .links--div {
   font-family: "Lato", sans-serif;
-  font-size: 300%;
+  font-size: 250%;
   font-weight: 550;
   color: #150907;
 }

@@ -113,14 +113,18 @@ a {
         }
         &--gif__img {
             width: 100%;
-            margin: 10% 0;
+            margin: 5% 0 0 0;
         }
         &--techs {
             &__div {
                 margin: 0 3%;
             }
             &__h2 {
+                margin-top: 10%;
                 @include header--second;
+            }
+            &__p {
+                @include paragraph;
             }
         }
         &--paragraph__div {
