@@ -14,6 +14,7 @@ a {
 
 $background-color: #000001;
 .hero {
+    height: 100vh;
     max-height: 100vh;
     overflow: hidden;
     margin-top: -.1%;
@@ -21,6 +22,7 @@ $background-color: #000001;
     width: 100vw;
     #myVideo {
         // background-attachment: fixed;
+        height: 100vh;
         max-height: 100vh;
         width: 100vw;
         background-position: center;
@@ -36,6 +38,7 @@ $background-color: #000001;
         bottom: 0;
         color: #f1f1f1;
         width: 100%;
+        height: 100vh;
         max-height: 100vh;
         background-image: linear-gradient(transparent, $background-color 99.9%);
     }
