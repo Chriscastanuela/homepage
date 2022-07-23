@@ -34,7 +34,10 @@ $background-color: #000001;
     }
 
     .content {
-        // overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
         position: absolute;
         bottom: 0;
         color: #f1f1f1;
@@ -62,7 +65,7 @@ $background-color: #000001;
         -webkit-text-stroke: 1.5px $white;
     }
     &--name__li:first-child {
-        margin: 12vh 0 0 0;
+        // margin: 12vh 0 0 0;
     }
     &--name__li--christopher {
         animation-name: moveInRight;
