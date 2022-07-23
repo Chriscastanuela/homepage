@@ -15,25 +15,26 @@ a {
 $background-color: #000001;
 .hero {
     height: 100vh;
-    // max-height: 100vh;
-    overflow: hidden;
     margin-top: -.1%;
-
     width: 100vw;
+    .video {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
     #myVideo {
         // background-attachment: fixed;
-        height: 100vh;
-        // max-height: 100vh;
-        width: 100vw;
+        height: 100%;
+        width: 100%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        overflow: hidden;
+        // overflow: hidden;
         // position: relative;
     }
 
     .content {
-        overflow: hidden;
+        // overflow: hidden;
         position: absolute;
         bottom: 0;
         color: #f1f1f1;
