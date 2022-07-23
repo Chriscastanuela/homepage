@@ -86,7 +86,7 @@ a {
 }
 
 .hero {
-  height: 100vh;
+  max-height: 100vh;
   overflow: hidden;
   margin-top: -0.1%;
   width: 100vw;
@@ -97,6 +97,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 .hero .content {
   overflow: hidden;
