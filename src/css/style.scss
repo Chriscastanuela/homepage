@@ -17,20 +17,22 @@ $background-color: #000001;
     height: 100vh;
     margin-top: -.1%;
     width: 100vw;
+    .img-holder {
+        min-width: 100vw;
+        min-height: 100vh;
+        overflow: hidden;
+    }
     .video {
         width: 100vw;
         height: 100vh;
         overflow: hidden;
     }
     #myVideo {
-        // background-attachment: fixed;
-        height: 100%;
+        height: 100vh;
         width: 100%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        // overflow: hidden;
-        // position: relative;
     }
 
     .content {
