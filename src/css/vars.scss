@@ -61,7 +61,8 @@ $border--black: #333333 2px solid;
     align-items: center;
 
     justify-content: center;
-    margin: 10% 0;
+    // margin: 10% 0;
+    padding: 10% 0;
 }
 
 @mixin title-h1 {
@@ -69,7 +70,8 @@ $border--black: #333333 2px solid;
     color: transparent;
     -webkit-text-stroke: 1.5px $white;
 
-    margin-top: 2%;
+    // margin-top: 2%;
+    padding-top: 2%;
 }
 
 @mixin box {
