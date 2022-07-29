@@ -14,35 +14,45 @@ a {
 
 $background-color: #000001;
 .hero {
-    height: 100vh;
-    margin-top: -.1%;
-    width: 100vw;
+    min-width: 100vw;
+    min-height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+    // margin-top: -.1%;
+    
     .img-holder {
         min-width: 100%;
-        min-height: 100%;
+        min-height: 100vh;
         max-width: 100%;
-        max-height: 100%;
+        max-height: 100vh;
         overflow: hidden;
     }
     .video {
         min-width: 100%;
-        min-height: 100%;
+        min-height: 100vh;
         max-width: 100%;
-        max-height: 100%;
-        
+        max-height: 100vh;
         overflow: hidden;
     }
     #myVideo {
         min-width: 100%;
-        min-height: 100%;
+        min-height: 100vh;
         max-width: 100%;
-        max-height: 100%;
+        max-height: 100vh;
+        overflow: hidden;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     .content {
+        min-width: 100%;
+        min-height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        overflow: hidden;
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -50,8 +60,8 @@ $background-color: #000001;
         position: absolute;
         bottom: 0;
         color: #f1f1f1;
-        width: 100%;
-        height: 100vh;
+        // width: 100%;
+        // height: 100vh;
         // max-height: 100vh;
         background-image: linear-gradient(transparent, $background-color 99.9%);
     }
