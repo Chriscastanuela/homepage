@@ -79,6 +79,7 @@ body, html {
   font-size: 62.5%;
   margin: 0;
   padding: 0;
+  background-color: #000001;
 }
 
 a {
@@ -103,14 +104,14 @@ a {
   min-width: 100%;
   min-height: 100%;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 100vh;
   overflow: hidden;
 }
 .hero #myVideo {
   min-width: 100%;
   min-height: 100vh;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 100vh;
   overflow: hidden;
   background-position: center;
   background-repeat: no-repeat;
@@ -129,7 +130,7 @@ a {
   position: absolute;
   bottom: 0;
   color: #f1f1f1;
-  background-color: #000001;
+  background-image: linear-gradient(to bottom, transparent, #000001);
 }
 .hero ul {
   list-style-type: none;

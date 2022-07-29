@@ -7,7 +7,7 @@ body, html {
     font-size: 62.5%;
     margin:0; 
     padding: 0;
-    // background-color: $background-color;
+    background-color: $background-color;
 }
 
 a {
@@ -31,14 +31,14 @@ a {
         min-width: 100%;
         min-height: 100%;
         max-width: 100%;
-        max-height: 100%;
+        max-height: 100vh;
         overflow: hidden;
     }
     #myVideo {
         min-width: 100%;
         min-height: 100vh;
         max-width: 100%;
-        max-height: 100%;
+        max-height: 100vh;
         overflow: hidden;
         background-position: center;
         background-repeat: no-repeat;
@@ -59,8 +59,8 @@ a {
         position: absolute;
         bottom: 0;
         color: #f1f1f1;
-        // background-image: linear-gradient(to bottom, transparent, $background-color);
-        background-color: $background-color;
+        background-image: linear-gradient(to bottom, transparent, $background-color);
+        // background-color: $background-color;
     }
     ul {
         list-style-type: none;
