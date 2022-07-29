@@ -59,7 +59,8 @@ $background-color: #000001;
         position: absolute;
         bottom: 0;
         color: #f1f1f1;
-        background-image: linear-gradient(to bottom, transparent, $background-color);
+        // background-image: linear-gradient(to bottom, transparent, $background-color);
+        background-color: $background-color;
     }
     ul {
         list-style-type: none;
@@ -82,17 +83,20 @@ $background-color: #000001;
     &--name__li:first-child {
         // margin: 12vh 0 0 0;
     }
-    &--name__li--christopher {
+    &--name__li--one {
         animation-name: moveInRight;
         animation-duration: 1s;
+        font-size: 150%;
     }
-    &--name__li--anthony {
+    &--name__li--two {
         animation-name: moveInLeft;
         animation-duration: 1.5s;
+        font-size: 150%;
     }
-    &--name__li--castanuela {
+    &--name__li--three {
         animation-name: moveInRight;
         animation-duration: 2.2s;
+        font-size: 150%;
     }
 }
 
@@ -383,5 +387,18 @@ $background-color: #000001;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    ul {
+        .hero {
+            &--name__li--one {
+                font-size: 250%;
+            }
+            &--name__li--two {
+                font-size: 250%;
+            }
+            &--name__li--three {
+                font-size: 250%;
+            }
+        }
     }
 }
