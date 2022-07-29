@@ -92,14 +92,14 @@ a {
   max-height: 100vh;
   overflow: hidden;
 }
-.hero .img-holder {
+.hero .video {
   min-width: 100%;
   min-height: 100vh;
   max-width: 100%;
   max-height: 100vh;
   overflow: hidden;
 }
-.hero .video {
+.hero .img-holder {
   min-width: 100%;
   min-height: 100vh;
   max-width: 100%;
@@ -165,8 +165,7 @@ a {
   background-color: #000001;
   min-height: 100vh;
   min-width: 100vw;
-  overflow: auto;
-  margin-top: -0.1%;
+  overflow: hidden;
 }
 .projects--title__div {
   display: flex;
