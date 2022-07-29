@@ -1,18 +1,18 @@
 @import './anim.scss';
 @import './vars.scss';
 
+$background-color: #000001;
+
 body, html {
     font-size: 62.5%;
     margin:0; 
     padding: 0;
+    background-color: $background-color;
 }
 
 a {
     cursor: pointer;
 }
-//
-
-$background-color: #000001;
 .hero {
     min-width: 100vw;
     min-height: 100vh;
