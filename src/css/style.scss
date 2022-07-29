@@ -402,3 +402,35 @@ a {
         }
     }
 }
+
+@media only screen and (min-width: 720px) {
+    ul {
+        .hero {
+            &--name__li--one {
+                font-size: 275%;
+            }
+            &--name__li--two {
+                font-size: 275%;
+            }
+            &--name__li--three {
+                font-size: 275%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 820px) {
+    ul {
+        .hero {
+            &--name__li--one {
+                font-size: 300%;
+            }
+            &--name__li--two {
+                font-size: 300%;
+            }
+            &--name__li--three {
+                font-size: 300%;
+            }
+        }
+    }
+}

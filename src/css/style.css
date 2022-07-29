@@ -592,5 +592,27 @@ a {
     font-size: 250%;
   }
 }
+@media only screen and (min-width: 720px) {
+  ul .hero--name__li--one {
+    font-size: 275%;
+  }
+  ul .hero--name__li--two {
+    font-size: 275%;
+  }
+  ul .hero--name__li--three {
+    font-size: 275%;
+  }
+}
+@media only screen and (min-width: 820px) {
+  ul .hero--name__li--one {
+    font-size: 300%;
+  }
+  ul .hero--name__li--two {
+    font-size: 300%;
+  }
+  ul .hero--name__li--three {
+    font-size: 300%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
