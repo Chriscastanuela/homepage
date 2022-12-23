@@ -15,7 +15,7 @@
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(-10vw);
+    transform: translateX(-100vw);
   }
   80% {
     opacity: 0.2;
@@ -141,29 +141,30 @@ a {
   align-self: center;
   justify-self: center;
 }
-.hero--name__li {
+.hero__name--li {
   font-family: "Lato", sans-serif;
   font-size: 650%;
   font-weight: 550;
   color: #f2f2f2;
   margin: 0;
+  transition: all 0.6s;
   color: transparent;
   -webkit-text-stroke: 1.5px #f2f2f2;
 }
-.hero--name__li--one {
+.hero__name--span {
+  font-size: 150%;
+}
+.hero__name--span__one {
   animation-name: moveInRight;
   animation-duration: 1s;
-  font-size: 150%;
 }
-.hero--name__li--two {
+.hero__name--span__two {
   animation-name: moveInLeft;
   animation-duration: 1.5s;
-  font-size: 150%;
 }
-.hero--name__li--three {
+.hero__name--span__three {
   animation-name: moveInRight;
   animation-duration: 2.2s;
-  font-size: 150%;
 }
 
 .projects {
@@ -582,35 +583,35 @@ a {
     flex-direction: column;
     align-items: center;
   }
-  ul .hero--name__li--one {
+  ul .hero__name--span__one {
     font-size: 250%;
   }
-  ul .hero--name__li--two {
+  ul .hero__name--span__two {
     font-size: 250%;
   }
-  ul .hero--name__li--three {
+  ul .hero__name--span__three {
     font-size: 250%;
   }
 }
 @media only screen and (min-width: 720px) {
-  ul .hero--name__li--one {
+  ul .hero__name--span__one {
     font-size: 275%;
   }
-  ul .hero--name__li--two {
+  ul .hero__name--span__two {
     font-size: 275%;
   }
-  ul .hero--name__li--three {
+  ul .hero__name--span__three {
     font-size: 275%;
   }
 }
 @media only screen and (min-width: 820px) {
-  ul .hero--name__li--one {
+  ul .hero__name--span__one {
     font-size: 300%;
   }
-  ul .hero--name__li--two {
+  ul .hero__name--span__two {
     font-size: 300%;
   }
-  ul .hero--name__li--three {
+  ul .hero__name--span__three {
     font-size: 300%;
   }
 }
