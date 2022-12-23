@@ -1,31 +1,18 @@
-const xButton = document.getElementById('header--button__x');
+const sections = document.querySelectorAll(".section");
 
-const homeSection = document.querySelector('.home');
-const projectsSection = document.querySelector('.projects');
-const menu = document.querySelector('.menu');
+const intersectionObserver = new IntersectionObserver((entries) =>
+  entries.forEach((i) => i.isIntersecting && i.target.classList.add("show"))
+);
 
-let visibility = false;
+let sectionCount = 0;
 
-const theHiddenThing = (itemInQuestion) => {
-    if (visibility === false) {
-        itemInQuestion.style.visibility = 'visible';
+sections.forEach((section) => {
+  sectionCount += 1;
+  console.log(sectionCount);
+  console.log(section);
+  sectionCount % 2 === 0
+    ? section.classList.add("section__left")
+    : section.classList.add("section__right");
+});
 
-        itemInQuestion.style.animationName = 'moveUp';
-        itemInQuestion.style.animationDuration = '.6s';
-        visibility = true;
-    } else {
-        itemInQuestion.style.visibility = 'hidden';
-
-        itemInQuestion.style.animationName = 'null';
-        itemInQuestion.style.animationDuration = 'null';
-
-        visibility = false;
-    }
-
-};
-const openAndClose = () => {
-    xButton.classList.toggle('header--button__x-open');
-    theHiddenThing(menu);
-}
-
-xButton.onclick = () => {openAndClose()};
+sections.forEach((el) => intersectionObserver.observe(el));

@@ -13,6 +13,23 @@ body, html {
 a {
     cursor: pointer;
 }
+.section {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all .7s;
+    &__left {transform: translateX(-100%)}
+    &__right {
+        transform: translateX(100%);
+        transition-delay: 100ms;
+    }
+};
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 .hero {
     min-width: 100vw;
     min-height: 100vh;
@@ -46,9 +63,9 @@ a {
         z-index: 0;
     }
     .content {
-        min-width: 100%;
+        // min-width: 100%;
         min-height: 100%;
-        max-width: 100%;
+        // max-width: 100%;
         max-height: 100%;
         overflow: hidden;
 
@@ -59,8 +76,6 @@ a {
         position: absolute;
         bottom: 0;
         color: #f1f1f1;
-        background-image: linear-gradient(to bottom, transparent, $background-color);
-        // background-color: $background-color;
     }
     ul {
         list-style-type: none;
