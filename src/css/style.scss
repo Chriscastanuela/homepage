@@ -355,7 +355,7 @@ a {
         width: 100% !important;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start !important;
         min-height: 100%;
     }
 }
@@ -365,7 +365,6 @@ a {
 }
 .links--div {
     @include paragraph;
-    align-items: center;
 }
 
 @media only screen and (min-width: 540px) {
