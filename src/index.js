@@ -8,8 +8,6 @@ let sectionCount = 0;
 
 sections.forEach((section) => {
   sectionCount += 1;
-  console.log(sectionCount);
-  console.log(section);
   sectionCount % 2 === 0
     ? section.classList.add("section__left")
     : section.classList.add("section__right");
