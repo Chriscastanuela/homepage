@@ -90,7 +90,6 @@ a {
     &__name {
         &--li {
             @include header--first;
-            transition: all .6s;
             color: transparent;
             -webkit-text-stroke: 1.5px $white;
         }
@@ -98,17 +97,17 @@ a {
             font-size: 150%;
             &__one {
                 animation-name: moveInRight;
-                animation-duration: 1s;
+                animation-duration: .3s;
                 // font-size: 150%;
             }
             &__two {
                 animation-name: moveInLeft;
-                animation-duration: 1.5s;
+                animation-duration: 1.8s;
                 // font-size: 150%;
             }
             &__three {
                 animation-name: moveInRight;
-                animation-duration: 2.2s;
+                animation-duration: 2.3s;
                 // font-size: 150%;
             }
         }
