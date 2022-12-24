@@ -99,7 +99,7 @@ a {
   transition-delay: 100ms;
 }
 
-.show {
+.fade {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);

@@ -1,7 +1,7 @@
 const sections = document.querySelectorAll(".section");
 
-const intersectionObserver = new IntersectionObserver((entries) =>
-  entries.forEach((i) => i.isIntersecting && i.target.classList.add("show"))
+const intersectionObserver = new IntersectionObserver((els) =>
+  els.forEach((el) => el.isIntersecting && el.target.classList.add("fade"))
 );
 
 let sectionCount = 0;
@@ -13,4 +13,4 @@ sections.forEach((section) => {
     : section.classList.add("section__right");
 });
 
-sections.forEach((el) => intersectionObserver.observe(el));
+sections.forEach((section) => intersectionObserver.observe(section));
