@@ -13,6 +13,23 @@ body, html {
 a {
     cursor: pointer;
 }
+.section {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all .7s;
+    &__left {transform: translateX(-100%)}
+    &__right {
+        transform: translateX(100%);
+        transition-delay: 100ms;
+    }
+};
+
+.fade {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 .hero {
     min-width: 100vw;
     min-height: 100vh;
@@ -46,9 +63,9 @@ a {
         z-index: 0;
     }
     .content {
-        min-width: 100%;
+        // min-width: 100%;
         min-height: 100%;
-        max-width: 100%;
+        // max-width: 100%;
         max-height: 100%;
         overflow: hidden;
 
@@ -59,8 +76,6 @@ a {
         position: absolute;
         bottom: 0;
         color: #f1f1f1;
-        background-image: linear-gradient(to bottom, transparent, $background-color);
-        // background-color: $background-color;
     }
     ul {
         list-style-type: none;
@@ -72,31 +87,30 @@ a {
         align-self: center;
         justify-self: center;
     }
-    &--name__div {
-        // height: max-content;
-    }
-    &--name__li {
-        @include header--first;
-        color: transparent;
-        -webkit-text-stroke: 1.5px $white;
-    }
-    &--name__li:first-child {
-        // margin: 12vh 0 0 0;
-    }
-    &--name__li--one {
-        animation-name: moveInRight;
-        animation-duration: 1s;
-        font-size: 150%;
-    }
-    &--name__li--two {
-        animation-name: moveInLeft;
-        animation-duration: 1.5s;
-        font-size: 150%;
-    }
-    &--name__li--three {
-        animation-name: moveInRight;
-        animation-duration: 2.2s;
-        font-size: 150%;
+    &__name {
+        &--li {
+            @include header--first;
+            color: transparent;
+            -webkit-text-stroke: 1.5px $white;
+        }
+        &--span {
+            font-size: 150%;
+            &__one {
+                animation-name: moveInRight;
+                animation-duration: .3s;
+                // font-size: 150%;
+            }
+            &__two {
+                animation-name: moveInLeft;
+                animation-duration: 1.8s;
+                // font-size: 150%;
+            }
+            &__three {
+                animation-name: moveInRight;
+                animation-duration: 2.3s;
+                // font-size: 150%;
+            }
+        }
     }
 }
 
@@ -355,7 +369,7 @@ a {
         width: 100% !important;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start !important;
         min-height: 100%;
     }
 }
@@ -390,13 +404,13 @@ a {
     }
     ul {
         .hero {
-            &--name__li--one {
+            &__name--span__one {
                 font-size: 250%;
             }
-            &--name__li--two {
+            &__name--span__two {
                 font-size: 250%;
             }
-            &--name__li--three {
+            &__name--span__three {
                 font-size: 250%;
             }
         }
@@ -406,13 +420,13 @@ a {
 @media only screen and (min-width: 720px) {
     ul {
         .hero {
-            &--name__li--one {
+            &__name--span__one {
                 font-size: 275%;
             }
-            &--name__li--two {
+            &__name--span__two {
                 font-size: 275%;
             }
-            &--name__li--three {
+            &__name--span__three {
                 font-size: 275%;
             }
         }
@@ -422,13 +436,13 @@ a {
 @media only screen and (min-width: 820px) {
     ul {
         .hero {
-            &--name__li--one {
+            &__name--span__one {
                 font-size: 300%;
             }
-            &--name__li--two {
+            &__name--span__two {
                 font-size: 300%;
             }
-            &--name__li--three {
+            &__name--span__three {
                 font-size: 300%;
             }
         }

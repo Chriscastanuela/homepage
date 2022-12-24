@@ -6,8 +6,8 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
 
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel='shortcut icon' type='image/png' href='./src/assets/c/c.png'>
+    <link rel="stylesheet" href="./src/css/css/style.css">
+    <link rel='shortcut icon' type='image/png' href='./src/assets/c-hand.png'>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
     </style>
@@ -16,28 +16,20 @@
     <title>Chris Castanuela</title>
 </head>
 <body>
-    <div class="hero">
-        <div class="video">
-            <div class="img-holder">
-                <!-- <img src="./src/assets/Kanagawa.png" alt="Famous Painting of Kanagawa Wave by Hokusai" id="myVideo"> -->
-            </div>
-            <div class="content">
-                <div class='hero--name hero--name__div'>
-                    <ul class='hero--name hero--name__ul'>
-                        <li class='hero--name hero--name__li'>
-                            <span class='hero--name hero--name__li hero--name__li--one'
-                            >Christopher</span><br>
-                            <span class='hero--name hero--name__li hero--name__li--two'
-                            >Anthony</span><br>
-                            <span class='hero--name hero--name__li hero--name__li--three'
-                            >Castanuela</span><br>
-                        </li>
-                    </ul>
-                </div>
+    <section class="section hero">
+        <div class="content">
+            <div class='hero__name hero__name__div'>
+                <ul class='hero__name hero__name__ul'>
+                    <li class='hero__name hero__name--li'>
+                        <span class='hero__name hero__name--span hero__name--span__one'>Christopher</span><br>
+                        <span class='hero__name hero__name--span hero__name--span__two'>Anthony</span><br>
+                        <span class='hero__name hero__name--span hero__name--span__three'>Castanuela</span><br>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-    <section class='projects'>
+    </section>
+    <section class='section projects'>
         <div class="projects--title__div">
             <h1 class="projects--title__h1">PROJECTS</h1>
         </div>
@@ -59,7 +51,7 @@
                 <p class="project--techs__p">React Router | UserEvent | ES6</p>
             </div>
             <div class="project--gif__div">
-                <img src="./src/assets/project-gif-1.gif" alt="gif of project" class="project--gif__img">
+                <img src="./src/assets/gif-project-school.gif" alt="gif of project" class="project--gif__img">
             </div>
             <div class="project--paragraph__div">
                 <p class="project--paragraph__p">
@@ -85,7 +77,7 @@
                 <p class="project--techs__p">Mocha | Chai | ES6</p>
             </div>
             <div class="project--gif__div">
-                <img src="./src/assets/project-gif-2.gif" alt="gif of project" class="project--gif__img">
+                <img src="./src/assets/gif-project-fitlit.gif" alt="gif of project" class="project--gif__img">
             </div>
             <div class="project--paragraph__div">
                 <p class="project--paragraph__p">
@@ -94,7 +86,7 @@
             </div>
         </div>
     </section>
-    <section class='skills'>
+    <section class='section skills'>
         <div class="skills--title__div">
             <h1 class="skills--title__h1">SKILLS</h1>
         </div>
@@ -106,7 +98,7 @@
             </div>
             <div class="skill-section--skills__div">
                 <h2 class="skill-section--skills__h2">
-                    Chart.js | Graphql | Javascript | ES6 | Node.js | Fetch API | Express | React | Redux | CSS | SASS | BEM | HTML | XML | Git | Github | Jest | Mocha | Chai | TDD | NPM | OOP | Unit testing | Integration testing | Local storage | Typescript | MongoDB
+                    Chart.js | Graphql | Javascript | ES6 | Node.js | Fetch API | Express | React | Redux | CSS | SASS | BEM | HTML | XML | Git | Github | Jest | Mocha | Chai | TDD | NPM | OOP | Unit testing | Integration testing | Local storage | Playwright | YML | Continuous Integration | MySQL | PostgreSQL
                 </h2>
             </div>
         </div>
@@ -118,12 +110,12 @@
             </div>
             <div class="skill-section--skills__div">
                 <h2 class="skill-section--skills__h2">
-                    Angular | Flutter | React Native | Docker | Kubernetes
+                    Angular | Flutter | React Native | Docker | Kubernetes | Cybersecurity
                 </h2>
             </div>
         </div>
     </section>
-    <section class='pubs'>
+    <section class='section pubs'>
         <div class="pubs--title__div">
             <h1 class="pubs--title__h1">PUBLICATIONS</h1>
         </div>
@@ -153,7 +145,7 @@
             </div>
         </div>
     </section>
-    <section class='education'>
+    <section class='section education'>
         <div class="education--title__div">
             <h1 class="education--title__h1">EDUCATION</h1>
         </div>
@@ -175,7 +167,7 @@
             </div>
         </div>
     </section>
-    <section class='courses'>
+    <section class='section courses'>
         <div class="courses--title__div">
             <h1 class="courses--title__h1">COURSES</h1>
         </div>
@@ -192,25 +184,27 @@
             </div>
         </div>
     </section>
-    <section class='footer'>
+    <section class='section footer'>
         <div class="footer-content">
             <div class="email--div">
                 <p class="email--p">
-                    chriscastanuela@gmail.com
+                    Primary: chriscastanuela@ymail.com
+                </p>
+                <p class="email--p">
+                    Secondary: chriscastanuela@gmail.com
                 </p>
             </div>
             <div class="links--div">
                 <p class="links--p">
                     <span><a onclick='window.open("https://www.linkedin.com/in/christopher-castanuela/", "_blank", "width=800, height=800");'>LinkedIn&nbsp;&#128279;</a></span> |
                     <span><a onclick='window.open("https://github.com/Chriscastanuela", "_blank", "width=800, height=800");'>Github&nbsp;&#128279;</a></span> |
-                    <span><a onclick='window.open("https://twitter.com/thechriscast_", "_blank", "width=800, height=800");'>Twitter&nbsp;&#128279;</a></span><br>
-                    <span><a onclick='window.open("https://www.youtube.com/channel/UCK2dW7PyeWDh9vKSp6ibgcQ", "_blank", "width=800, height=800");'>Youtube&nbsp;&#128279;</a></span> |
-                    <span><a onclick='window.open("https://www.youtube.com/watch?v=iik25wqIuFo", "_blank", "width=800, height=800");'>Friendster&nbsp;&#128279;</a></span>
+                    <span><a onclick='window.open("https://twitter.com/thechriscast_", "_blank", "width=800, height=800");'>Twitter&nbsp;&#128279;</a></span>
+                    <span><a onclick='window.open("https://www.youtube.com/channel/UCK2dW7PyeWDh9vKSp6ibgcQ", "_blank", "width=800, height=800");'>Youtube&nbsp;&#128279;</a></span>
                 </p>
             </div>
         </div>
     </section>
-    <script src='./main.js'></script>
+    <script defer src='src/index.js'></script>
 </body>
 </html>
 
