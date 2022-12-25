@@ -12,6 +12,8 @@ body, html {
 
 a {
     cursor: pointer;
+    font-style: italic;
+    text-decoration: underline;
 }
 .section {
     opacity: 0;
@@ -136,6 +138,8 @@ a {
             margin: 0 3%;
             a {
                 @include paragraph;
+                font-style: italic;
+                text-decoration: underline;
             }
         }
 
@@ -257,6 +261,8 @@ a {
         margin: 0 3%;
         a {
             @include paragraph;
+            font-style: italic;
+            text-decoration: underline;
         }
     }
     &--details {

@@ -84,6 +84,8 @@ body, html {
 
 a {
   cursor: pointer;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 .section {
@@ -223,6 +225,8 @@ a {
   font-size: 300%;
   font-weight: 550;
   color: #150907;
+  font-style: italic;
+  text-decoration: underline;
 }
 .projects .project--school-registration {
   float: right;
@@ -391,6 +395,8 @@ a {
   font-size: 300%;
   font-weight: 550;
   color: #150907;
+  font-style: italic;
+  text-decoration: underline;
 }
 .pub--details__div {
   margin: 0 3%;
