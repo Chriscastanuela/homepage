@@ -100,20 +100,22 @@ a {
             &__one {
                 animation-name: moveInRight;
                 animation-duration: .3s;
-                // font-size: 150%;
             }
             &__two {
                 animation-name: moveInLeft;
                 animation-duration: 1.8s;
-                // font-size: 150%;
             }
             &__three {
                 animation-name: moveInRight;
                 animation-duration: 2.3s;
-                // font-size: 150%;
             }
         }
     }
+}
+
+.title__h1 {
+    @include title-h1;
+    font-size: 900%;
 }
 
 .projects {
@@ -126,9 +128,6 @@ a {
 
     &--title__div {
         @include title-div;
-    }
-    &--title__h1 {
-        @include title-h1;
     }
 
     .project {
@@ -422,6 +421,9 @@ a {
             }
         }
     }
+    .title__h1 {
+        font-size: 1200%;
+    }
 }
 
 @media only screen and (min-width: 720px) {
@@ -438,6 +440,9 @@ a {
             }
         }
     }
+    .title__h1 {
+        font-size: 1400%;
+    }
 }
 
 @media only screen and (min-width: 820px) {
@@ -453,5 +458,8 @@ a {
                 font-size: 300%;
             }
         }
+    }
+    .title__h1 {
+        font-size: 1500%;
     }
 }
