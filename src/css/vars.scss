@@ -83,3 +83,46 @@ $border--black: #333333 2px solid;
     }
     overflow: auto;
 }
+
+@mixin projectAndProjectType {
+    @include box;
+
+    &__link--div {
+        margin: 0 3%;
+        a {
+            @include paragraph;
+            font-style: italic;
+            text-decoration: underline;
+        }
+    }
+    
+    &__title--div {
+        display: flex;
+        align-items: center;
+    }
+    &__title--h1 {
+        @include header--first;
+        color: transparent;
+        -webkit-text-stroke: 1.5px $background-color;
+    }
+    &__gif--img {
+        width: 100%;
+        margin: 5% 0 0 0;
+    }
+    &__techs {
+        &--div {
+            margin: 0 3%;
+        }
+        &--h2 {
+            margin-top: 10%;
+            @include header--second;
+        }
+        &--p {
+            @include paragraph;
+        }
+    }
+    &__paragraph--div {
+        margin: 0 3%;
+        @include paragraph;
+    }
+}

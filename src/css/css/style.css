@@ -204,25 +204,26 @@ a {
   z-index: 1;
   margin-top: 0;
 }
-.projects--title__div {
+.projects__title--div {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10% 0;
 }
-.projects .project {
+
+.project {
   background-color: #f2f2f2;
   width: 80%;
   margin-bottom: 10%;
   overflow: auto;
 }
-.projects .project:last-child {
+.project:last-child {
   margin-bottom: 0;
 }
-.projects .project--repo__div {
+.project__link--div {
   margin: 0 3%;
 }
-.projects .project--repo__div a {
+.project__link--div a {
   font-family: "Lato", sans-serif;
   font-size: 300%;
   font-weight: 550;
@@ -230,17 +231,11 @@ a {
   font-style: italic;
   text-decoration: underline;
 }
-.projects .project--school-registration {
-  float: right;
-}
-.projects .project--fitlit {
-  float: left;
-}
-.projects .project--title__div {
+.project__title--div {
   display: flex;
   align-items: center;
 }
-.projects .project--title__h1 {
+.project__title--h1 {
   font-family: "Lato", sans-serif;
   font-size: 650%;
   font-weight: 550;
@@ -249,27 +244,87 @@ a {
   color: transparent;
   -webkit-text-stroke: 1.5px #000001;
 }
-.projects .project--gif__img {
+.project__gif--img {
   width: 100%;
   margin: 5% 0 0 0;
 }
-.projects .project--techs__div {
+.project__techs--div {
   margin: 0 3%;
 }
-.projects .project--techs__h2 {
+.project__techs--h2 {
   margin-top: 10%;
   font-family: "Lato", sans-serif;
   font-size: 400%;
   font-weight: 550;
   color: #150907;
 }
-.projects .project--techs__p {
+.project__techs--p {
   font-family: "Lato", sans-serif;
   font-size: 300%;
   font-weight: 550;
   color: #150907;
 }
-.projects .project--paragraph__div {
+.project__paragraph--div {
+  margin: 0 3%;
+  font-family: "Lato", sans-serif;
+  font-size: 300%;
+  font-weight: 550;
+  color: #150907;
+}
+.project__type {
+  background-color: #f2f2f2;
+  width: 80%;
+  margin-bottom: 10%;
+  overflow: auto;
+}
+.project__type:last-child {
+  margin-bottom: 0;
+}
+.project__type__link--div {
+  margin: 0 3%;
+}
+.project__type__link--div a {
+  font-family: "Lato", sans-serif;
+  font-size: 300%;
+  font-weight: 550;
+  color: #150907;
+  font-style: italic;
+  text-decoration: underline;
+}
+.project__type__title--div {
+  display: flex;
+  align-items: center;
+}
+.project__type__title--h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 650%;
+  font-weight: 550;
+  color: #f2f2f2;
+  margin: 0;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #000001;
+}
+.project__type__gif--img {
+  width: 100%;
+  margin: 5% 0 0 0;
+}
+.project__type__techs--div {
+  margin: 0 3%;
+}
+.project__type__techs--h2 {
+  margin-top: 10%;
+  font-family: "Lato", sans-serif;
+  font-size: 400%;
+  font-weight: 550;
+  color: #150907;
+}
+.project__type__techs--p {
+  font-family: "Lato", sans-serif;
+  font-size: 300%;
+  font-weight: 550;
+  color: #150907;
+}
+.project__type__paragraph--div {
   margin: 0 3%;
   font-family: "Lato", sans-serif;
   font-size: 300%;
@@ -590,12 +645,6 @@ a {
   .project, .skill-section, .pub, .edu, .course {
     width: 45% !important;
   }
-  .project--school-registration {
-    float: left !important;
-  }
-  .project--fitlit {
-    float: right !important;
-  }
   .skill-section--current {
     float: left !important;
   }
@@ -646,6 +695,12 @@ a {
   }
   .title__h1 {
     font-size: 1500%;
+  }
+  .project {
+    width: 40% !important;
+  }
+  .project__type {
+    width: 40% !important;
   }
 }
 

@@ -126,61 +126,14 @@ a {
     z-index: 1;
     margin-top: 0;
 
-    &--title__div {
+    &__title--div {
         @include title-div;
     }
+}
 
-    .project {
-        @include box;
-
-        &--repo__div {
-            margin: 0 3%;
-            a {
-                @include paragraph;
-                font-style: italic;
-                text-decoration: underline;
-            }
-        }
-
-
-        &--school-registration {
-            float: right;
-        }
-        &--fitlit {
-            float: left;
-        }
-
-        
-        &--title__div {
-            display: flex;
-            align-items: center;
-        }
-        &--title__h1 {
-            @include header--first;
-            color: transparent;
-            -webkit-text-stroke: 1.5px $background-color;
-        }
-        &--gif__img {
-            width: 100%;
-            margin: 5% 0 0 0;
-        }
-        &--techs {
-            &__div {
-                margin: 0 3%;
-            }
-            &__h2 {
-                margin-top: 10%;
-                @include header--second;
-            }
-            &__p {
-                @include paragraph;
-            }
-        }
-        &--paragraph__div {
-            margin: 0 3%;
-            @include paragraph;
-        }
-    }
+.project {
+    @include projectAndProjectType;
+    &__type {@include projectAndProjectType}
 }
 
 .skills {
@@ -391,12 +344,6 @@ a {
     .project, .skill-section, .pub, .edu, .course {
         width: 45% !important;
     }
-    .project--school-registration {
-        float: left !important;
-    }
-    .project--fitlit {
-        float: right !important;
-    }
     .skill-section--current {
         float: left !important;
     }
@@ -461,5 +408,9 @@ a {
     }
     .title__h1 {
         font-size: 1500%;
+    }
+    .project {
+        width: 40% !important;
+        &__type {width: 40% !important}
     }
 }
