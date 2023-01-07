@@ -217,9 +217,6 @@ a {
   margin-bottom: 10%;
   overflow: auto;
 }
-.project:last-child {
-  margin-bottom: 0;
-}
 .project__link--div {
   margin: 0 3%;
 }
@@ -276,9 +273,6 @@ a {
   width: 80%;
   margin-bottom: 10%;
   overflow: auto;
-}
-.project__type:last-child {
-  margin-bottom: 0;
 }
 .project__type__link--div {
   margin: 0 3%;
@@ -362,9 +356,6 @@ a {
   margin-bottom: 10%;
   overflow: auto;
 }
-.skill-section:last-child {
-  margin-bottom: 0;
-}
 .skill-section--current {
   float: right;
 }
@@ -427,9 +418,6 @@ a {
   margin-bottom: 10%;
   overflow: auto;
   float: right;
-}
-.pub:last-child {
-  margin-bottom: 0;
 }
 .pub--title__div {
   display: flex;
@@ -506,9 +494,6 @@ a {
   margin-bottom: 10%;
   overflow: auto;
 }
-.edu:last-child {
-  margin-bottom: 0;
-}
 .edu--title__div {
   display: flex;
   align-items: center;
@@ -571,9 +556,6 @@ a {
   overflow: auto;
   float: right;
 }
-.course:last-child {
-  margin-bottom: 0;
-}
 .course--title__div {
   display: flex;
   align-items: center;
@@ -622,9 +604,7 @@ a {
   align-items: flex-start !important;
   min-height: 100%;
   padding-left: 2% !important;
-}
-.footer-content:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .email--div {
@@ -639,6 +619,13 @@ a {
   font-size: 300%;
   font-weight: 550;
   color: #150907;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 @media only screen and (min-width: 540px) {

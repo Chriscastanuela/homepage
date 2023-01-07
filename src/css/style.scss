@@ -330,6 +330,7 @@ a {
         align-items: flex-start !important;
         min-height: 100%;
         padding-left: 2% !important;
+        margin-bottom: 0 !important;
     }
 }
 
@@ -338,6 +339,13 @@ a {
 }
 .links--div {
     @include paragraph;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 @media only screen and (min-width: 540px) {

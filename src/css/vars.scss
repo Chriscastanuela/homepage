@@ -78,9 +78,6 @@ $border--black: #333333 2px solid;
     background-color: $white;
     width: 80%;
     margin-bottom: 10%;
-    &:last-child {
-        margin-bottom: 0;
-    }
     overflow: auto;
 }
 
