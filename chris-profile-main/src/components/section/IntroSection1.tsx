@@ -1,0 +1,85 @@
+/* eslint-disable @next/next/no-img-element */
+import React from "react";
+import Button from "../Atoms/Button";
+import HappyClient from "./HappyClient";
+import Navbar from "../navbar";
+import ProfessionalAvatar from "./ProfessionalAvatar";
+import Link from "next/link";
+
+export const AIDevelopmentBadge = () => {
+  return (
+    <span className="
+      inline-flex justify-between items-center
+      w-[236px] h-8 px-4 py-1
+      text-sm font-medium leading-6
+      text-[#131426] dark:text-white
+      rounded-[20px] pointer-events-none
+      bg-gradient-to-r from-[rgba(255,189,18,0.12)] via-[rgba(224,61,61,0.12)] to-[rgba(205,33,233,0.12)]
+      dark:from-[rgba(255,189,18,0.2)] dark:via-[rgba(224,61,61,0.2)] dark:to-[rgba(205,33,233,0.2)]
+    ">
+      Now developing faster with AI
+    </span>
+  );
+};
+
+interface IntroSection1Props {
+  title: string;
+  description: string;
+  heroImage: {
+    asset: {
+      url: string;
+    };
+  };
+}
+
+const IntroSection = ({ title, description, heroImage }: IntroSection1Props) => {
+  return (
+    <div className="w-full">
+      <div className="px-8 max-w-[1800px] mx-auto relative min-h-[500px]">
+        <div className="relative z-10">
+          <Navbar />
+          <div className="flex flex-col items-center justify-center gap-8 sm:gap-12 pt-6 md:pt-24 md:pb-16 pb-10">
+            <div className="flex flex-col gap-8 items-center justify-center relative">
+              <ProfessionalAvatar 
+                imageUrl="/chris.png"
+                name="Chris Castanuela"
+                isVerified={true}
+                isAvailable={true}
+              />
+
+              <div className="flex flex-col gap-6 items-center justify-center max-md:text-center max-w-full sm:max-w-[600px]">
+                <h1 className="text-[30px] sm:text-5xl dark:text-primary text-quaternary text-shadow-lg text-center leading-[42px] sm:leading-[55px]">{title}</h1>
+                <p className="text-[18px] sm:text-2xl dark:text-secondary text-quaternary text-center max-w-full sm:max-w-[500px]">{description}</p>
+              </div>
+            </div>
+            
+            <AIDevelopmentBadge />
+            <HappyClient />
+            
+            <div className="flex gap-3 items-center flex-row">
+              <Link href="/#work"> 
+                <Button size="large" className="font-normal text-sm sm:text-base px-3 py-2 sm:px-4 sm:py-3">
+                  See my work
+                </Button>
+              </Link>
+              
+              <a
+                href="mailto:chris.devworks@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                id="contact-me-btn"
+                data-gtm="contact-me-btn1"
+              >
+                <Button size="large" className="font-normal text-sm sm:text-base px-3 py-2 sm:px-4 sm:py-3">
+                  Contact me
+                </Button>
+              </a> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default IntroSection;

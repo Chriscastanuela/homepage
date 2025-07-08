@@ -1,0 +1,174 @@
+export const links = [
+    {
+        id: 1,
+        name: "Work",
+        href: "/#work",
+    },
+    {
+        id: 2,
+        name: "Skills",
+        href: "/#skills",
+    },
+    // {
+    //     id: 3,
+    //     name: "Experience",
+    //     href: "/#experience",
+    // },
+    // testimonials
+    {
+        id: 3,
+        name: "Testimonials",
+        href: "/#testimonials",
+    },
+    {
+        id: 4,
+        name: "FAQ",
+        href: "/#faq",
+    },
+    {
+        id: 5,
+        name: "Blog",
+        href: "/blog",
+    },
+];
+
+export const skills = [
+    {
+        name: "JavaScript",
+    },
+    {
+        name: "TypeScript",
+    },
+    {
+        name: "React",
+    },
+    {
+        name: "Next.js",
+    },
+    {
+        name: "Tailwind CSS",
+    },
+    {
+        name: "Node.js",
+    },
+    {
+        name: "Express.js",
+    },
+    {
+        name: "GraphQL",
+    },
+    {
+        name: "MongoDB",
+    },
+    {
+        name: "PostgreSQL",
+    },
+    {
+        name: "Redux",
+    },
+    {
+        name: "Vue.js",
+    },
+    {
+        name: "Angular",
+    },
+    {
+        name: "Docker",
+    },
+    {
+        name: "AWS",
+    },
+]
+
+export const services = [
+    {
+        name: "Frontend Development",
+    },
+    {
+        name: "Backend Development",
+    },
+    {
+        name: "AI SaaS",
+    },
+    {
+        name: "Web3 Solutions",
+    },
+    {
+        name: "Webflow",
+    },
+    {
+        name: "Shopify",
+    },
+    {
+        name: "Database Migration",
+    },
+    {
+        name: "E-commerce Setup",
+    },
+    {
+        name: "API Development",
+    },
+    {
+        name: "System Architecture",
+    },
+    {
+        name: "Web Security",
+    },
+    {
+        name: "Performance Optimization",
+    },
+    {
+        name: "Technical Consulting",
+    },
+    {
+        name: "Database Design",
+    },
+    {
+        name: "Cloud Architecture",
+    },
+    {
+        name: "Microservices",
+    },
+    {
+        name: "Testing & QA",
+    }
+];
+
+export const experience = [
+    {
+        name: "Full Stack Developer",
+        position: "Black Acre Global",
+        duration: "Jan 2024 - Present",
+    },
+    {
+        name: "Lead Frontend Developer",
+        position: "Black And Black Creative",
+        duration: "Feb 2023 - Dec 2023",
+    },
+    {
+        name: "Frontend Developer",
+        position: "BumpUp Solutions",
+        duration: "May 2022 - Dec 2022",
+    },
+]
+
+export const calendlyUrl = "https://calendly.com/hamza4600/30min";
+export const domainURL = "http://thechriscast.com";
+export const googleSiteVerification = "n6ArufZOpEvqIJUWuqMzjUXkX4GmOwFz1DrP44b9G44";
+
+export const locales = ['en', 'ar', 'fr'];
+export const defaultLocale = 'en';
+export const langSelectorOptions = [
+    {
+        name: "English",
+        value: "en",
+    },
+    {
+        name: "Arabic",
+        value: "ar",
+    },
+    {
+        name: "French",
+        value: "fr",
+    },
+]

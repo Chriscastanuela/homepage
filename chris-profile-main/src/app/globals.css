@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+    --token-8b6a7334-820a-4d9b-8537-80339ff619b9: rgb(10, 10, 10);
+    --token-49164ff2-888d-40c1-96fa-58a3e961b851: rgb(252, 252, 250);
+    --token-310ebed3-699e-415f-a351-71fd111ec39a: rgba(255, 255, 255, 0.7);
+    --token-e68482e3-7718-4ff9-af40-2df4dad739ed: rgba(255, 255, 255, 0.08);
+    --token-3d00fca5-db35-46ad-aadb-7b0b17ce63d8: rgb(13, 13, 13);
+    --token-bd5d9edd-4c5f-46bd-bac6-12bf742c548d: rgb(20, 20, 20);
+    --token-3a1a7f69-d83d-458f-97e1-646d59db42e1: rgb(0, 85, 255);
+}
+h1:empty,
+h2:empty,
+h3:empty,
+h4:empty,
+h5:empty,
+h6:empty,
+p:empty,
+/* ul:empty, */
+/* li:empty, */
+span:empty {
+    display: none;
+}
+
+html,
+body,
+#main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+            to bottom,
+            transparent,
+            rgb(var(--background-end-rgb))
+        )
+        rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+/* // custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #888;
+}
+/* 
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} */
+#smooth-content {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.bg-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/07.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
